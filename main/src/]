@@ -1,0 +1,44 @@
+fn main(){
+    use std::time::Instant;
+    let t = Instant::now();
+    fn ma() {
+        let mut k:i8 = 0;
+        let a: &str = "123123";
+        //let c: String = k.to_string().to_owned();
+        let b: &str = " amogus sussy balls ";
+        for x in 1..100{
+            k+=2; 
+            let xx : String = x.to_string();
+            println!("{}",xx+b+a+"\n");println!("{}",k);
+     }
+    }
+    fn isprime(b:i64) -> bool {
+        if b<=1 {return false;}    
+        for x in 2..(b+1){
+            if b%x==0 && x != b{
+                return false;
+            }
+        return true;
+        }true
+    }
+    fn ev(){
+            let a = 1000 ;
+            let mut n : i32 = 10;
+            let mut c : i32 = 0;
+            let mut i : i64 = 0;
+
+            while i < a{
+                i+=1;if i<3{print!("{}{}",i," ");}
+                if isprime(i)==true{
+                    print!("{}{}",i," ");c+=1;}
+                if c > n {n+=10;println!("{}","\n");}
+            }        
+        println!("\n");
+        println!("total: {}", c)
+    }
+    ev();
+    println!("{}",isprime(12));
+    let t1 = t.elapsed();
+    print!("took {:.2?}",t1);
+  }
+ 
