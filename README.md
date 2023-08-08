@@ -1,7 +1,7 @@
 # rust-tracer
 simple ray tracer written in Rust using SDL2 as renderer [WIP]
 ## build
-clone the repo then build and run the project using `cargo build --release && cargo run --release`
+simply clone the repo then build and run the project using `cargo build --release && cargo run --release`
 ## some pics
 <p float="left">
     <img src="imgs/balls.png" width=50%/>
