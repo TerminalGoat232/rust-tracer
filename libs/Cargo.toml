@@ -1,0 +1,13 @@
+
+[package]
+name = "stuffs"
+version = "0.0.1"
+author = ["TerminalGoat"]
+[lib]
+name = "stuffs"
+path = "src/lib.rs"
+[dependencies]
+derivative = "2.2.0"
+min-max = "0.1.8"
+rand = "0.8.5"
+rand_distr = "0.4.3"
