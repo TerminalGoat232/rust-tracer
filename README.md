@@ -1,5 +1,5 @@
 # rust-tracer
-simple ray tracer written in Rust using SDL2 as renderer [WIP]
+simple ray tracer written in Rust by a dum Rust beginner who just switched from py and C++, using SDL2 as renderer [WIP]
 ## build
 simply clone the repo then build and run the project using `cargo build --release && cargo run --release`
 ## some pics
