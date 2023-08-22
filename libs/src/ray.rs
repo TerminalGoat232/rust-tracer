@@ -1,7 +1,8 @@
+#[allow(non_snake_case)]
 pub mod ray{
     use vec3::vector3::*;
     use obj::objects::*;
-    use utils::util::Rd_Direction;
+    
     #[derive(Copy, Clone)]
     pub struct Ray{
         pub origin:Vec3,
@@ -24,7 +25,7 @@ pub mod ray{
                   material: Material{color: Vec3(0.0, 0.0, 0.0), ..Default::default()}
                 };
               //let rd = Rd_Direction() * 0.0;
-              let offset_ray_orig: Vec3 = (self.origin - sphere.centre);
+              let offset_ray_orig: Vec3 = self.origin - sphere.centre;
               // Sphere formula 
               // ()|ray_org + ray_dir + distance|)^2 = radius^2;
               let a:f64 = self.direction.dot(self.direction);

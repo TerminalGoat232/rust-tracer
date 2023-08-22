@@ -1,9 +1,9 @@
-
+#[allow(non_snake_case)]
 pub mod vector3{
     extern crate derivative;
-    use self::derivative::Derivative;
+    
     use std::fmt;
-    use std::ops::{Add, AddAssign, Sub, SubAssign, Mul, MulAssign,Div, DivAssign, Neg, Deref};
+    use std::ops::{Add, AddAssign, Sub, SubAssign, Mul, MulAssign,Div, Neg};
     #[derive(Copy, Clone, Default)]
     pub struct Vec3{
         pub x :f64,
