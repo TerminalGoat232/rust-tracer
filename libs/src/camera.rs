@@ -43,8 +43,8 @@ pub mod cam {
             let rd = Rd_Direction()*self._blur_rate;
             let k = self._u_left_corner + self.h*tx + self.v*ty - self.origin;
             if self._blur_rate != 0.0 {
-                //bluring objects by randomizing their bounce rays
-                //with small amount of blur rate, this can acts as an antialiasing factor    
+                //blurring objects through randomizing their bounce rays
+                //with a small amount of blur rate, this can act as an antialiasing factor    
                 _d = true;
             }
             else {
